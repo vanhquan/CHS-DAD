@@ -1,0 +1,11 @@
+InvoiceNo	String	50	
+InvoiceDate	DateTime		
+CustomerName	String	500	
+Address	String	500	
+Status	String	3	
+Remarks	String	500	
+AirWaybillNo	String	50	
+AirWaybillDate	DateTime		
+ChargeableWeight	Currency		
+Amount	Currency		
+Pieces	Number
