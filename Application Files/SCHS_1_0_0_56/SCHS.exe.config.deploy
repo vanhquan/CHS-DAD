@@ -29,4 +29,27 @@
       </providers>
     </roleManager>
   </system.web>
+
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="CISServiceSoap" />
+      </basicHttpBinding>
+      <customBinding>
+        <binding name="CISServiceSoap12">
+          <textMessageEncoding messageVersion="Soap12" />
+          <httpTransport />
+        </binding>
+      </customBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://103.248.160.15:8088/KDTServiceAcc/CISService.asmx"
+          binding="basicHttpBinding" bindingConfiguration="CISServiceSoap"
+          contract="CISServiceSoap" name="CISServiceSoap" />
+      <endpoint address="http://103.248.160.15:8088/KDTServiceAcc/CISService.asmx"
+          binding="customBinding" bindingConfiguration="CISServiceSoap12"
+          contract="CISServiceSoap" name="CISServiceSoap12" />
+    </client>
+  </system.serviceModel>
+
 </configuration>
