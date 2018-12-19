@@ -1,0 +1,6 @@
+AirWaybillDate	DateTime		
+FlightDate	DateTime		
+FlightNo	String	10	
+AirWaybillNo	String	20	
+CgoKgs	Currency		
+OPS	Currency		
