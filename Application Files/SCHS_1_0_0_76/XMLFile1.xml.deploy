@@ -1,0 +1,108 @@
+﻿<Envelope>
+  <Header>
+    <procedureType>2</procedureType>
+    <Reference>
+      <version>3.00</version>
+      <messageId>90c458d9-d1bd-4c1f-a7a4-b4d2e9e1242b</messageId>
+    </Reference>
+    <SendApplication>
+      <name>SCHS</name>
+      <version>1.0.0.0</version>
+      <companyName>SAGS</companyName>
+      <companyIdentity>0312610240-001</companyIdentity>
+      <createMessageIssue>2018-10-12 10:30:10</createMessageIssue>
+    </SendApplication>
+    <From>
+      <name>Công ty Cổ phần phục vụ Mặt đất Sài Gòn - Chi nhánh Đà Nẵng</name>
+      <identity>0100101308</identity>
+    </From>
+    <To>
+      <name>Chi cục Hải Quan Đà Nẵng</name>
+      <identity>01B1</identity>
+    </To>
+    <Subject>
+      <type>2665</type>
+      <function>13</function>
+      <reference>90c458d9-d1bd-4c1f-a7a4-b4d2e9e1242b</reference>
+      <sendApplication>TQDT_TT</sendApplication>
+      <receiveApplication>TQDT_TT</receiveApplication>
+    </Subject>
+  </Header>
+  <Body>
+    <Content>
+      <Declaration>
+        <issuer>2665</issuer>
+        <reference>90c458d9-d1bd-4c1f-a7a4-b4d2e9e1242b</reference>
+        <issue>2018-10-12 10:30:10</issue>
+        <function>13</function>
+        <issueLocation />
+        <status>1</status>
+        <customsReference />
+        <acceptance />
+        <declarationOffice>01B1</declarationOffice>
+        <Agent>
+          <name>Công ty Cổ phần phục vụ Mặt đất Sài Gòn - Chi nhánh Đà Nẵng</name>
+          <identity>0100101308</identity>
+          <status>3</status>
+        </Agent>
+        <Importer>
+          <name>Công ty Cổ phần phục vụ Mặt đất Sài Gòn - Chi nhánh Đà Nẵng</name>
+          <identity>0100101308</identity>
+        </Importer>
+        <PortDocument>
+          <identity>SAGS</identity>
+          <name>Công ty Cổ phần phục vụ Mặt đất Sài Gòn - Chi nhánh Đà Nẵng</name>
+        </PortDocument>
+        <TransportEquipmentType>
+          <type>1</type>
+        </TransportEquipmentType>
+        <TransportEquipments>
+          <TransportEquipment>
+            <sequence>1</sequence>
+            <houseBillOfLading></houseBillOfLading>
+            <masterBillOfLading>DAD-1201</masterBillOfLading>
+            <cargoCtrlNo>2018DAD-1201</cargoCtrlNo>
+            <cargoPiece>200</cargoPiece>
+            <pieceUnitCode>PCE</pieceUnitCode>
+            <cargoWeight>1200</cargoWeight>
+            <weightUnitCode>KGM</weightUnitCode>
+            <transportIdentity>AK648</transportIdentity>
+            <arrivalDeparture>2018-10-12 00:00:00</arrivalDeparture>
+            <containerLocation>.</containerLocation>
+            <commodityDescription>.</commodityDescription>
+            <content></content>
+            <type>1</type>
+            <getIn>2018-10-12 00:00:00</getIn>
+            <difference>0</difference>
+            <isFinal>1</isFinal>
+            <CIMP></CIMP>
+          </TransportEquipment>
+          <TransportEquipment>
+            <sequence>1</sequence>
+            <houseBillOfLading></houseBillOfLading>
+            <masterBillOfLading>DAD-1202</masterBillOfLading>
+            <cargoCtrlNo>2018DAD-1202</cargoCtrlNo>
+            <cargoPiece>250</cargoPiece>
+            <pieceUnitCode>PCE</pieceUnitCode>
+            <cargoWeight>750</cargoWeight>
+            <weightUnitCode>KGM</weightUnitCode>
+            <transportIdentity>AK648</transportIdentity>
+            <arrivalDeparture>2018-10-12 00:00:00</arrivalDeparture>
+            <containerLocation>.</containerLocation>
+            <commodityDescription>.</commodityDescription>
+            <content></content>
+            <type>1</type>
+            <getIn>2018-10-12 00:00:00</getIn>
+            <difference>0</difference>
+            <isFinal>1</isFinal>
+            <CIMP></CIMP>
+          </TransportEquipment>
+        </TransportEquipments>
+      </Declaration>
+    </Content>
+    <Signature>
+      <data />
+      <fileCert />
+    </Signature>
+  </Body>
+</Envelope>
