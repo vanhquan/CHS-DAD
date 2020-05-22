@@ -1,0 +1,18 @@
+FlightNo	String	50	
+ACType	String	50	
+ACRegNo	String	50	
+FlightDate	DateTime	
+Departure	String	50	
+Destination	String	50	
+AirWaybillNo	String	50	
+Notify	String	500
+UldPiece	Number		
+NatureOfGoods	String	50	
+Weight	Currency		
+ChargeableWeight	Currency		
+HandlingInformation	String	500
+TotalAWBPiece	Number	
+TareWeight	Number
+ULDID	String	20
+Route	String	3
+ULDAWBWGT	Number
