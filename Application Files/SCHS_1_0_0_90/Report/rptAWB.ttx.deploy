@@ -1,0 +1,13 @@
+AirWaybillDate	Datetime
+FlightNo	String	10	
+Route	String	100	
+AirWaybillNo	String	50	
+Pieces	Number		
+ChargeableWeight	Currency		
+Cash	Currency		
+Card	Currency		
+ConsigeeName	String	100
+WarehouseFee	Currency
+FlightDate	Datetime
+NatureOfGoods	String	50
+InvoiceNo	String	50
