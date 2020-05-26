@@ -1,0 +1,14 @@
+AirWaybillDate	DateTime		
+FlightDate	DateTime		
+FlightNo	String	10	
+AirWaybillNo	String	20	
+CgoKgs	Currency		
+OPS	Currency
+Kind	String	10
+ShipperName	String	150
+ConsigneeName	String	150
+Pieces	Number
+InvoiceNo	String	20
+InvoiceDate	DateTime
+CustomerName	String	150
+Route	String	10	
