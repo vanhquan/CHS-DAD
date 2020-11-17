@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+  </configSections>
+  <appSettings>
+    <add key="BaseStation" value="DAD" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+    <add key="SGN" value="bOKBdmrcAX9BXOf6dI/tuRQ0kbsnQ3G9/DAnrrwyVe8NoADWrc4ws87B39SfOug+UMRuEv2rtwcdd6PeYF2nhh79YYfzuSEqc/6bhxRGXHOlXfjgI+WJz/sjNLEJYa2lik1tNWg29dMytXE6Z78KsA==" />
+    <add key="DAD" value="+7cZQSQYPlCxKY0xWyQR+Jldkk7j51SBhtfidnTqUQy61oYdeMvkUVSID+xalyiwh4Zco3lZi4P3pv9SODCNXEZHmR8cWN+dRgMwpU+FJjvZ06qZ2GElBdVUAHloJg9fLuJ8RtEamDSyehW1sbMYOZLBtIIK+hHFOIm5P2eDJ8g=" />
+    <add key="CXR" value="+7cZQSQYPlCxKY0xWyQR+PKOO7fTjUqQ27E1mt8cfhe3t+HdzcDdJasZgFwrDIszk4UnrnhufMtADCROq0sXxsegoe6Wyf8yQDP89hsZXdi35P0xiZBhMWCrmmxYZBjL6Jt5OyTg8ZY+gSIhxRxN1w==" />
+  </appSettings>
+  <connectionStrings>
+    <add name="AirWaybill.Properties.Settings.DCS20ConnectionString"
+      connectionString="+7cZQSQYPlCxKY0xWyQR+O4/qZIzUlrLknHDhpo4eJZuI/3gECfzwQVktb9cTDQNl7O8oFE4GmuBocUIPzzN/0Q7U4g9V7bgO5uDMCsywWwyMcJ2aOkOKIteXzQERyQ8tm2WNBkLYDi+wewc7V2fWw=="
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" />
+  </startup>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="CISServiceSoap" />
+      </basicHttpBinding>
+      <customBinding>
+        <binding name="CISServiceSoap12">
+          <textMessageEncoding messageVersion="Soap12" />
+          <httpTransport />
+        </binding>
+      </customBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://103.248.160.15:8088/KDTServiceAcc/CISService.asmx"
+          binding="basicHttpBinding" bindingConfiguration="CISServiceSoap"
+          contract="CISServiceSoap" name="CISServiceSoap" />
+      <endpoint address="http://103.248.160.15:8088/KDTServiceAcc/CISService.asmx"
+          binding="customBinding" bindingConfiguration="CISServiceSoap12"
+          contract="CISServiceSoap" name="CISServiceSoap12" />
+    </client>
+  </system.serviceModel>
+
+</configuration>
